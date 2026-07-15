@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Transcript
+conversation_transcript.md
+
+# Temporary scripts
+download_images.js
+dl_wiki.py
+dl_wiki2.py
+export_transcript.cjs
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

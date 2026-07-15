@@ -1,0 +1,72 @@
+[
+  {
+    "id": "p1",
+    "title": "Minimalist Ceramic Mug",
+    "price": 14.99,
+    "image": "images/p1.png",
+    "category": "Home"
+  },
+  {
+    "id": "p2",
+    "title": "Ergonomic Desk Chair",
+    "price": 199.99,
+    "image": "images/p2.png",
+    "category": "Office"
+  },
+  {
+    "id": "p3",
+    "title": "Noise Cancelling Headphones",
+    "price": 249.50,
+    "image": "images/p3.png",
+    "category": "Electronics"
+  },
+  {
+    "id": "p4",
+    "title": "Leather Notebook",
+    "price": 25.00,
+    "image": "images/p4.png",
+    "category": "Office"
+  },
+  {
+    "id": "p5",
+    "title": "Stainless Steel Water Bottle",
+    "price": 22.50,
+    "image": "images/p5.png",
+    "category": "Accessories"
+  },
+  {
+    "id": "p6",
+    "title": "Mechanical Keyboard",
+    "price": 129.99,
+    "image": "images/p6.png",
+    "category": "Electronics"
+  },
+  {
+    "id": "p7",
+    "title": "Indoor Potted Plant",
+    "price": 35.00,
+    "image": "images/p7.png",
+    "category": "Home"
+  },
+  {
+    "id": "p8",
+    "title": "Scented Candle",
+    "price": 18.00,
+    "image": "images/p8.png",
+    "category": "Home"
+  },
+  {
+    "id": "p9",
+    "title": "Wireless Mouse",
+    "price": 45.00,
+    "image": "images/p9.png",
+    "category": "Electronics"
+  },
+  {
+    "id": "p10",
+    "title": "Yoga Mat",
+    "price": 29.99,
+    "image": "images/p10.png",
+    "category": "Fitness"
+  }
+]

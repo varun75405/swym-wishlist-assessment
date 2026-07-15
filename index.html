@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Storefront & Wishlists</title>
+    <!-- Modern font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-logo">AURA</div>
+        <button id="open-merge-btn" class="btn btn-secondary">Merge Wishlists</button>
+    </header>
+    
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>My Wishlists</h2>
+                <button id="create-wishlist-btn" class="icon-btn add-btn" aria-label="Create Wishlist">+</button>
+            </div>
+            <div id="wishlists-list" class="sidebar-list"></div>
+        </aside>
+        
+        <main class="main-content">
+            <div id="wishlist-view" class="wishlist-view-container"></div>
+            <div class="catalog-header">
+                <h2>All Products</h2>
+            </div>
+            <div id="product-grid" class="product-grid"></div>
+        </main>
+    </div>
+    
+    <!-- ARIA Live Region for Toasts -->
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <!-- Modals -->
+    <div id="create-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="create-modal-title">
+        <div class="modal-content">
+            <h3 id="create-modal-title">Create New Wishlist</h3>
+            <input type="text" id="new-wishlist-name" placeholder="Wishlist name (max 50 chars)" maxlength="50">
+            <div class="modal-actions">
+                <button id="cancel-create-btn" class="btn btn-outline">Cancel</button>
+                <button id="confirm-create-btn" class="btn">Create</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="picker-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="picker-modal-title">
+        <div class="modal-content">
+            <h3 id="picker-modal-title">Add to Wishlist</h3>
+            <p class="picker-subtitle">Select a destination wishlist</p>
+            <div id="picker-list" class="picker-list"></div>
+            <div class="modal-actions">
+                <button id="close-picker-btn" class="btn btn-outline">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="merge-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="merge-modal-title">
+        <div class="modal-content">
+            <h3 id="merge-modal-title">Merge Wishlists</h3>
+            <p class="picker-subtitle">Combine two wishlists into a new one. Original wishlists are preserved.</p>
+            <div class="merge-selectors">
+                <select id="merge-wishlist-a" aria-label="Select Wishlist A"></select>
+                <span class="merge-plus">+</span>
+                <select id="merge-wishlist-b" aria-label="Select Wishlist B"></select>
+            </div>
+            <input type="text" id="merge-new-name" placeholder="New merged wishlist name" maxlength="50">
+            <div class="modal-actions">
+                <button id="close-merge-btn" class="btn btn-outline">Cancel</button>
+                <button id="confirm-merge-btn" class="btn">Merge</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
